@@ -3,15 +3,18 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    ".expo/metro/shims/react-native-web/dist/cjs/exports/**/*",
+    ".expo/metro/shims/react-native-web/dist/exports/**/*",
+    ".expo/metro/polyfill.js",
+    ".expo/metro/polyfill.native.js",
+    "src/components/__tests__/StyledText-test.jsx"
   ]
 }
