@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "version": ">= 8.0.0"
+  },
+  "build": {
+    "simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "autoIncrement": true,
+      "channel": "development",
+      "env": {
+        "EXPO_PUBLIC_BUILD_ENV": "dev"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "autoIncrement": true,
+      "channel": "development",
+      "env": {
+        "EXPO_PUBLIC_BUILD_ENV": "dev"
+      },
+      "ios": {
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
